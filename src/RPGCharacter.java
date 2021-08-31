@@ -32,7 +32,7 @@ public class RPGCharacter {
      //returning information
 JOptionPane.showMessageDialog(null, " Strength - " + strength + " Dexterity - " + dexterity + " Constitution - " + constitution + " Wisdom - " + wisdom + " Charisma - " + charisma + " Intelligence - " + intelligence );
 JOptionPane.showMessageDialog(null, " Base damage - " + damage + " Armor rating - " + armor + " Mana capacity - " + mana + " Spell power - " + spellPower );
-
+System.exit(0);
 
 
 
