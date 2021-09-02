@@ -30,13 +30,12 @@ public class Sales {
 
      DecimalFormat currency = new DecimalFormat("###.##");
 
-     double price =  pricePer * quantity;
-     double subtotal = price - (price * (discount / 100));
-     double taxTotal = price - (price * (salesTax / 100));
-     double totalCost = subtotal + taxTotal ;
+     double price = pricePer * quantity;
+     double subTotal =  price - (price * discount / 100);
+     double taxTotal = price * salesTax / 100;
+     double totalCost = subTotal + taxTotal ;
 
-     JOptionPane.showMessageDialog(" Your price is: " + totalCost + " Your subtotal is: " + subtotal + " Your Tax is: " + taxtTotal);
-
+     JOptionPane.showMessageDialog(null, " Your price is: " + currency.format(totalCost) + " Your subtotal is: " + currency.format(subTotal) + " Your Tax is: " + currency.format(taxTotal));
 
 
 
