@@ -36,7 +36,7 @@ public class Sales {
      double totalCost = subTotal + taxTotal ;
 
      JOptionPane.showMessageDialog(null, " Your price is: " + currency.format(totalCost) + " Your subtotal is: " + currency.format(subTotal) + " Your Tax is: " + currency.format(taxTotal));
-
+     System.exit(0);
 
 
 
